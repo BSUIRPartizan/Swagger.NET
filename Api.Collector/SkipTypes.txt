@@ -1,0 +1,17 @@
+﻿Services.Controllers.BaseBOApiController`1[TBO]
+Services.Controllers.BaseApiController
+Services.Controllers.BaseApiController`1[TRepository]
+Services.Controllers.BaseBOApiV2Controller`2[TBO,T]
+Services.Controllers.BaseApiV2Controller`3[TRepository,T,TId]
+Services.Controllers.BaseRepositoryApiController`5[TRepository,TContract,TContractId,T,TId]
+Services.Controllers.Application.ExternalCrudRepositoryApiController`5[TRepository,TContract,TContractId,T,TId]
+Services.Controllers.Application.CrudRepositoryApiController`5[TRepository,TContract,TContractId,T,TId]
+Services.Controllers.BasePersonController`4[TContract,TEntity,TId,TRepository]
+Services.Controllers.UserContextBaseApiController`3[TRepository,T,TId]
+# Drop
+Services.Controllers.Administration.AdminAccountController
+Services.Controllers.FileApiController
+Services.Controllers.TherapyHistoriesController
+Services.Controllers.TherapyRemindersController
+Services.Controllers.AutocompleteController
+Services.Controllers.ValuesController

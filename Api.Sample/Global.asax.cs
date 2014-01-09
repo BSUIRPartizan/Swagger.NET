@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http.Formatting;
+﻿using System.Net.Http.Formatting;
 using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
@@ -10,7 +7,7 @@ using System.Web.Routing;
 
 namespace Api.Sample
 {
-    public class WebApiApplication : System.Web.HttpApplication
+    public class WebApiApplication : HttpApplication
     {
         protected void Application_Start()
         {
@@ -18,13 +15,11 @@ namespace Api.Sample
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-            WebApiConfig.Register(GlobalConfiguration.Configuration);
 
             // register JSONP media type formatter
-            var config = GlobalConfiguration.Configuration;
+            HttpConfiguration config = GlobalConfiguration.Configuration;
             config.Formatters.Clear();
             config.Formatters.Add(new JsonMediaTypeFormatter());
-
         }
     }
 }

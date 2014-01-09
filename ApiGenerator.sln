@@ -18,6 +18,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{C774F8
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Swagger.Generator.Runner", "Api.Generator.Runner\Api.Swagger.Generator.Runner.csproj", "{609BC343-262B-4FFF-8445-A506381D7BDA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SampleApp", "SampleApp", "{A8440FEC-AB78-49B8-94EA-A0483A63CC9A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B8DFB7FA-B415-4B2E-9FC4-9F6644BBF88A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{261DB7B5-A70C-4F2E-ACD6-77C7F5489813}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{0043DA81-DF90-42AC-8FA2-FE63A903F997}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,8 +50,19 @@ Global
 		{EED4941C-351A-497F-BDDD-D0541FE6D909}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EED4941C-351A-497F-BDDD-D0541FE6D909}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EED4941C-351A-497F-BDDD-D0541FE6D909}.Release|Any CPU.Build.0 = Release|Any CPU
+		{609BC343-262B-4FFF-8445-A506381D7BDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{609BC343-262B-4FFF-8445-A506381D7BDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{609BC343-262B-4FFF-8445-A506381D7BDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{609BC343-262B-4FFF-8445-A506381D7BDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C647370F-145F-4534-B0DC-DFABE4FB735A} = {A8440FEC-AB78-49B8-94EA-A0483A63CC9A}
+		{EED4941C-351A-497F-BDDD-D0541FE6D909} = {B8DFB7FA-B415-4B2E-9FC4-9F6644BBF88A}
+		{1AEB0F46-BA5C-475C-9A20-A95E695170E2} = {B8DFB7FA-B415-4B2E-9FC4-9F6644BBF88A}
+		{609BC343-262B-4FFF-8445-A506381D7BDA} = {261DB7B5-A70C-4F2E-ACD6-77C7F5489813}
+		{A9B7E4AA-C4F4-4507-ABE1-16F067FFEB02} = {0043DA81-DF90-42AC-8FA2-FE63A903F997}
 	EndGlobalSection
 EndGlobal

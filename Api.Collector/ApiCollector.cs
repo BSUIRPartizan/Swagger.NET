@@ -54,11 +54,13 @@ namespace Api.Collector
             foreach (ApiBundle apiBundle in apiBundles)
             {
                 Type type = apiBundle.Type;
+                
 
                 if (filter.Contains(type.ToString()))
                 {
                     apiBundle.Skip = true;
                     skipThisType.Add(type);
+                    Console.WriteLine("{0} - skip: {1}", type, apiBundle.Skip);
                     continue;
                 }
 
@@ -66,6 +68,11 @@ namespace Api.Collector
                 {
                     apiBundle.Skip = true;
                     skipThisType.Add(type);
+                    Console.WriteLine("{0} - skip: {1}", type, apiBundle.Skip);
+                }
+                else
+                {
+                    Console.WriteLine("{0} - skip: {1}", type, apiBundle.Skip);
                 }
             }
 

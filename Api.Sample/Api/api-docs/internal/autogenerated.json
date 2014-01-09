@@ -1,0 +1,1180 @@
+{
+  "apiVersion": "1.8",
+  "swaggerVersion": "1.1",
+  "basePath": "/",
+  "resourcePath": "/generated_by_controllers",
+  "apis": [
+    {
+      "path": "/records/{recordId}/lab/{Id}",
+      "description": "TODO: Missing desc for this api.",
+      "operations": [
+        {
+          "httpMethod": "GET",
+          "nickname": "LabResultController_GetLabResultsDetailsByID_Id",
+          "parameters": [
+            {
+              "description": "TODO: Missing desc for parameter 'Id'.",
+              "paramType": "path",
+              "required": true,
+              "allowMultiple": false,
+              "dataType": "int",
+              "name": "Id"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/records/{recordId}/labs/{testName}",
+      "description": "TODO: Missing desc for this api.",
+      "operations": [
+        {
+          "httpMethod": "GET",
+          "nickname": "LabResultController_GetLabResults_RecordIdTestName",
+          "parameters": [
+            {
+              "description": "TODO: Missing desc for parameter 'recordId'.",
+              "paramType": "path",
+              "required": true,
+              "allowMultiple": false,
+              "dataType": "int",
+              "name": "recordId"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'testName'.",
+              "paramType": "path",
+              "required": true,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "testName"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/records/{recordId}/labs/latest/{status}",
+      "description": "TODO: Missing desc for this api.",
+      "operations": [
+        {
+          "httpMethod": "GET",
+          "nickname": "LabResultController_GetLatestLabResults_RecordIdStatus",
+          "parameters": [
+            {
+              "description": "TODO: Missing desc for parameter 'recordId'.",
+              "paramType": "path",
+              "required": true,
+              "allowMultiple": false,
+              "dataType": "int",
+              "name": "recordId"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'status'.",
+              "paramType": "path",
+              "required": true,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "status"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/records/{recordId}/labs",
+      "description": "TODO: Missing desc for this api.",
+      "operations": [
+        {
+          "httpMethod": "GET",
+          "nickname": "LabResultController_GetLabResults_RecordIdBetweenOffsetLimitInclude_hiddenStatusOrder_by",
+          "parameters": [
+            {
+              "description": "TODO: Missing desc for parameter 'recordId'.",
+              "paramType": "path",
+              "required": true,
+              "allowMultiple": false,
+              "dataType": "int",
+              "name": "recordId"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'between'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "between"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'offset'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "offset"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'limit'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "limit"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'include_hidden'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "Boolean",
+              "name": "include_hidden"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'status'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "status"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'order_by'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "order_by"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/records/{recordId}/labs",
+      "description": "TODO: Missing desc for this api.",
+      "operations": [
+        {
+          "httpMethod": "POST",
+          "nickname": "LabResultController_Add_LabResult",
+          "parameters": [
+            {
+              "description": "TODO: Missing desc for parameter 'LabResult'.",
+              "paramType": "body",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "LabResult",
+              "name": "LabResult"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/records/{recordId}/labs/{id}",
+      "description": "TODO: Missing desc for this api.",
+      "operations": [
+        {
+          "httpMethod": "PUT",
+          "nickname": "LabResultController_Put_RecordIdIdLabResult",
+          "parameters": [
+            {
+              "description": "TODO: Missing desc for parameter 'recordId'.",
+              "paramType": "path",
+              "required": true,
+              "allowMultiple": false,
+              "dataType": "int",
+              "name": "recordId"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'id'.",
+              "paramType": "path",
+              "required": true,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "id"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'labResult'.",
+              "paramType": "body",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "LabResult",
+              "name": "labResult"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/records/{recordId}/labs/{id}",
+      "description": "TODO: Missing desc for this api.",
+      "operations": [
+        {
+          "httpMethod": "DELETE",
+          "nickname": "LabResultController_Delete_RecordIdId",
+          "parameters": [
+            {
+              "description": "TODO: Missing desc for parameter 'recordId'.",
+              "paramType": "path",
+              "required": true,
+              "allowMultiple": false,
+              "dataType": "int",
+              "name": "recordId"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'id'.",
+              "paramType": "path",
+              "required": true,
+              "allowMultiple": false,
+              "dataType": "int",
+              "name": "id"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/v1/marketplace/apps/{category}",
+      "description": "TODO: Missing desc for this api.",
+      "operations": [
+        {
+          "httpMethod": "GET",
+          "nickname": "MarketplaceAppsController_Get_CategoryLimitOffsetOrder_byQHlMetadataTypeFieldWithoutNameInAttribute",
+          "parameters": [
+            {
+              "description": "TODO: Missing desc for parameter 'category'.",
+              "paramType": "path",
+              "required": true,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "category"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'limit'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "int",
+              "name": "limit"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'offset'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "int",
+              "name": "offset"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'order_by'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "order_by"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'q'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "q"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'hl'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "hl"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'metadataType'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "ResponseMetadataType",
+              "name": "metadataType"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'FieldWithoutNameInAttribute'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "Boolean",
+              "name": "FieldWithoutNameInAttribute"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/v1/marketplace/apps/{category}/{searchTerm}",
+      "description": "TODO: Missing desc for this api.",
+      "operations": [
+        {
+          "httpMethod": "GET",
+          "nickname": "MarketplaceAppsController_Get_CategorySearchTermLimitOffsetOrder_byQHlMetadataTypeFieldWithoutNameInAttribute",
+          "parameters": [
+            {
+              "description": "TODO: Missing desc for parameter 'category'.",
+              "paramType": "path",
+              "required": true,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "category"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'searchTerm'.",
+              "paramType": "path",
+              "required": true,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "searchTerm"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'limit'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "int",
+              "name": "limit"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'offset'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "int",
+              "name": "offset"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'order_by'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "order_by"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'q'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "q"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'hl'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "hl"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'metadataType'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "ResponseMetadataType",
+              "name": "metadataType"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'FieldWithoutNameInAttribute'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "Boolean",
+              "name": "FieldWithoutNameInAttribute"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/v1/marketplace/apps",
+      "description": "TODO: Missing desc for this api.",
+      "operations": [
+        {
+          "httpMethod": "POST",
+          "nickname": "MarketplaceAppsController_Post",
+          "parameters": []
+        }
+      ]
+    },
+    {
+      "path": "/v1/group/{wlg}/marketplace/apps/{category}",
+      "description": "TODO: Missing desc for this api.",
+      "operations": [
+        {
+          "httpMethod": "GET",
+          "nickname": "MarketplaceAppsController_GetForOrgUnit_WlgCategoryLimitOffsetOrder_byQHlMetadataTypeFieldWithoutNameInAttribute",
+          "parameters": [
+            {
+              "description": "TODO: Missing desc for parameter 'wlg'.",
+              "paramType": "path",
+              "required": true,
+              "allowMultiple": false,
+              "dataType": "Guid",
+              "name": "wlg"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'category'.",
+              "paramType": "path",
+              "required": true,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "category"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'limit'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "int",
+              "name": "limit"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'offset'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "int",
+              "name": "offset"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'order_by'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "order_by"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'q'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "q"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'hl'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "hl"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'metadataType'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "ResponseMetadataType",
+              "name": "metadataType"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'FieldWithoutNameInAttribute'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "Boolean",
+              "name": "FieldWithoutNameInAttribute"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/v1/group/{wlg}/marketplace/apps/{category}/{searchTerm}",
+      "description": "TODO: Missing desc for this api.",
+      "operations": [
+        {
+          "httpMethod": "GET",
+          "nickname": "MarketplaceAppsController_GetForOrgUnit_WlgCategorySearchTermLimitOffsetOrder_byQHlMetadataTypeFieldWithoutNameInAttribute",
+          "parameters": [
+            {
+              "description": "TODO: Missing desc for parameter 'wlg'.",
+              "paramType": "path",
+              "required": true,
+              "allowMultiple": false,
+              "dataType": "Guid",
+              "name": "wlg"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'category'.",
+              "paramType": "path",
+              "required": true,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "category"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'searchTerm'.",
+              "paramType": "path",
+              "required": true,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "searchTerm"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'limit'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "int",
+              "name": "limit"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'offset'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "int",
+              "name": "offset"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'order_by'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "order_by"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'q'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "q"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'hl'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "hl"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'metadataType'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "ResponseMetadataType",
+              "name": "metadataType"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'FieldWithoutNameInAttribute'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "Boolean",
+              "name": "FieldWithoutNameInAttribute"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/v2/group/{wlg}/marketplaceApps",
+      "description": "TODO: Missing desc for this api.",
+      "operations": [
+        {
+          "httpMethod": "GET",
+          "nickname": "MarketplaceAppsController_GetWithAlgorithms_WlgParameter",
+          "parameters": [
+            {
+              "description": "TODO: Missing desc for parameter 'wlg'.",
+              "paramType": "path",
+              "required": true,
+              "allowMultiple": false,
+              "dataType": "Guid",
+              "name": "wlg"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'Parameter'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "Parameter"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/v2/group/memberships",
+      "description": "TODO: Missing desc for this api.",
+      "operations": [
+        {
+          "httpMethod": "GET",
+          "nickname": "MembershipTransactionController_GetFilteredMemberships_OwnerParentTypeOffsetLimitOrder_byInclude_hiddenQGroupCodeGroupCodeClimbTreePolicyNumberFlexField01FlexField02FlexField03FlexField04FlexField05FlexField06FlexField07FlexField08FlexField09FlexField10",
+          "parameters": [
+            {
+              "description": "TODO: Missing desc for parameter 'owner'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "int",
+              "name": "owner"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'parent'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "int",
+              "name": "parent"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'type'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "int",
+              "name": "type"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'offset'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "int",
+              "name": "offset"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'limit'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "int",
+              "name": "limit"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'order_by'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "order_by"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'include_hidden'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "Boolean",
+              "name": "include_hidden"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'q'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "q"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'groupCode'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "groupCode"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'groupCodeClimbTree'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "Boolean",
+              "name": "groupCodeClimbTree"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'policyNumber'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "policyNumber"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'flexField01'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "flexField01"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'flexField02'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "flexField02"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'flexField03'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "flexField03"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'flexField04'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "flexField04"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'flexField05'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "flexField05"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'flexField06'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "flexField06"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'flexField07'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "flexField07"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'flexField08'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "flexField08"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'flexField09'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "flexField09"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'flexField10'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "flexField10"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/v2/group/{groupId}/memberships",
+      "description": "TODO: Missing desc for this api.",
+      "operations": [
+        {
+          "httpMethod": "POST",
+          "nickname": "MembershipTransactionController_AddMembershipbyGroupId_GroupIdMembership",
+          "parameters": [
+            {
+              "description": "TODO: Missing desc for parameter 'groupId'.",
+              "paramType": "path",
+              "required": true,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "groupId"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'membership'.",
+              "paramType": "body",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "Membership",
+              "name": "membership"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/api/messagefolders/{id}",
+      "description": "TODO: Missing desc for this api.",
+      "operations": [
+        {
+          "httpMethod": "GET",
+          "nickname": "MessageFoldersController_Get_Id",
+          "parameters": [
+            {
+              "description": "TODO: Missing desc for parameter 'id'.",
+              "paramType": "path",
+              "required": true,
+              "allowMultiple": false,
+              "dataType": "int",
+              "name": "id"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/api/messagefolders/{id}",
+      "description": "TODO: Missing desc for this api.",
+      "operations": [
+        {
+          "httpMethod": "DELETE",
+          "nickname": "MessageFoldersController_Delete_Id",
+          "parameters": [
+            {
+              "description": "TODO: Missing desc for parameter 'id'.",
+              "paramType": "path",
+              "required": true,
+              "allowMultiple": false,
+              "dataType": "int",
+              "name": "id"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/api/messagefolders",
+      "description": "TODO: Missing desc for this api.",
+      "operations": [
+        {
+          "httpMethod": "GET",
+          "nickname": "MessageFoldersController_Get",
+          "parameters": []
+        }
+      ]
+    },
+    {
+      "path": "/api/messagefolders",
+      "description": "TODO: Missing desc for this api.",
+      "operations": [
+        {
+          "httpMethod": "POST",
+          "nickname": "MessageFoldersController_Post_Obj",
+          "parameters": [
+            {
+              "description": "TODO: Missing desc for parameter 'obj'.",
+              "paramType": "body",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "MessageFolder",
+              "name": "obj"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/api/messagefolders/{id}",
+      "description": "TODO: Missing desc for this api.",
+      "operations": [
+        {
+          "httpMethod": "PUT",
+          "nickname": "MessageFoldersController_Put_IdObj",
+          "parameters": [
+            {
+              "description": "TODO: Missing desc for parameter 'id'.",
+              "paramType": "path",
+              "required": true,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "id"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'obj'.",
+              "paramType": "body",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "MessageFolder",
+              "name": "obj"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/v2/ProcessMicrocommunities",
+      "description": "TODO: Missing desc for this api.",
+      "operations": [
+        {
+          "httpMethod": "GET",
+          "nickname": "MicroCommunityController_GetProcessMicrocommunities",
+          "parameters": []
+        }
+      ]
+    },
+    {
+      "path": "/v2/ProcessMicrocommunities/All",
+      "description": "TODO: Missing desc for this api.",
+      "operations": [
+        {
+          "httpMethod": "GET",
+          "nickname": "MicroCommunityController_GetProcessAllMicroCommunities",
+          "parameters": []
+        }
+      ]
+    },
+    {
+      "path": "/v1/utils/shorten",
+      "description": "TODO: Missing desc for this api.",
+      "operations": [
+        {
+          "httpMethod": "GET",
+          "nickname": "UrlShortenerController_Get_Url",
+          "parameters": [
+            {
+              "description": "TODO: Missing desc for parameter 'url'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "url"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/records/{recordid}/medicationfulfillment/{id}",
+      "description": "TODO: Missing desc for this api.",
+      "operations": [
+        {
+          "httpMethod": "GET",
+          "nickname": "MedicationFulfillmentController_Get_IdRecordId",
+          "parameters": [
+            {
+              "description": "TODO: Missing desc for parameter 'id'.",
+              "paramType": "path",
+              "required": true,
+              "allowMultiple": false,
+              "dataType": "int",
+              "name": "id"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'recordId'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "int",
+              "name": "recordId"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/records/{recordId}/goals",
+      "description": "TODO: Missing desc for this api.",
+      "operations": [
+        {
+          "httpMethod": "GET",
+          "nickname": "PHRGoalController_Get_UuidStartDateEndDateTrackerTypeStatus",
+          "parameters": [
+            {
+              "description": "TODO: Missing desc for parameter 'uuid'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "uuid"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'startDate'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "DateTime",
+              "name": "startDate"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'endDate'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "DateTime",
+              "name": "endDate"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'TrackerType'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "int",
+              "name": "TrackerType"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'status'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "Boolean",
+              "name": "status"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/records/{recordId}/goals",
+      "description": "TODO: Missing desc for this api.",
+      "operations": [
+        {
+          "httpMethod": "GET",
+          "nickname": "PHRGoalController_Get_RecordId",
+          "parameters": [
+            {
+              "description": "TODO: Missing desc for parameter 'recordId'.",
+              "paramType": "path",
+              "required": true,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "recordId"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/records/{recordId}/goals/{id}",
+      "description": "TODO: Missing desc for this api.",
+      "operations": [
+        {
+          "httpMethod": "GET",
+          "nickname": "PHRGoalController_Get_RecordIdId",
+          "parameters": [
+            {
+              "description": "TODO: Missing desc for parameter 'recordId'.",
+              "paramType": "path",
+              "required": true,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "recordId"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'Id'.",
+              "paramType": "query",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "Id"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/records/{recordId}/goals/{id}",
+      "description": "TODO: Missing desc for this api.",
+      "operations": [
+        {
+          "httpMethod": "PUT",
+          "nickname": "PHRGoalController_Put_RecordIdIdGoal",
+          "parameters": [
+            {
+              "description": "TODO: Missing desc for parameter 'recordId'.",
+              "paramType": "path",
+              "required": true,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "recordId"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'id'.",
+              "paramType": "path",
+              "required": true,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "id"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'goal'.",
+              "paramType": "body",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "PHRGoal",
+              "name": "goal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/records/{recordId}/goals",
+      "description": "TODO: Missing desc for this api.",
+      "operations": [
+        {
+          "httpMethod": "POST",
+          "nickname": "PHRGoalController_AddGoal_RecordIdGoal",
+          "parameters": [
+            {
+              "description": "TODO: Missing desc for parameter 'recordId'.",
+              "paramType": "path",
+              "required": true,
+              "allowMultiple": false,
+              "dataType": "string",
+              "name": "recordId"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'goal'.",
+              "paramType": "body",
+              "required": false,
+              "allowMultiple": false,
+              "dataType": "PHRGoal",
+              "name": "goal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/records/{recordId}/goals/{id}",
+      "description": "TODO: Missing desc for this api.",
+      "operations": [
+        {
+          "httpMethod": "DELETE",
+          "nickname": "PHRGoalController_DeleteGoal_RecordIdId",
+          "parameters": [
+            {
+              "description": "TODO: Missing desc for parameter 'recordId'.",
+              "paramType": "path",
+              "required": true,
+              "allowMultiple": false,
+              "dataType": "int",
+              "name": "recordId"
+            },
+            {
+              "description": "TODO: Missing desc for parameter 'id'.",
+              "paramType": "path",
+              "required": true,
+              "allowMultiple": false,
+              "dataType": "int",
+              "name": "id"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

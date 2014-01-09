@@ -15,3 +15,8 @@ Services.Controllers.TherapyHistoriesController
 Services.Controllers.TherapyRemindersController
 Services.Controllers.AutocompleteController
 Services.Controllers.ValuesController
+#Api.Sample app
+Api.Sample.Controllers.Base.BaseApiController
+Api.Sample.Controllers.Base.BaseRepositoryApiController`5[TRepository,TContract,TContractId,T,TId]
+Api.Sample.Controllers.Base.ThrowExceptionController
+Api.Sample.Controllers.Base.CrudRepositoryApiController`5[TRepository,TContract,TContractId,T,TId]

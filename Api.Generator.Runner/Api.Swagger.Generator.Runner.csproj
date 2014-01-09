@@ -47,41 +47,19 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Common.Old\Services.DataContracts\Services.DataContracts.csproj">
-      <Project>{e3782e97-a48e-448d-a806-b743c455f538}</Project>
-      <Name>Services.DataContracts</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\Services\Services.BusinessObjects\Services.BusinessObjects.csproj">
-      <Project>{fdefb80f-9e71-422c-b2fd-83d10e77a9d0}</Project>
-      <Name>Services.BusinessObjects</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\Services\Services.DataContracts.Core\Services.DataContracts.Core.csproj">
-      <Project>{5b385db1-fd3c-4736-8248-57816fa90887}</Project>
-      <Name>Services.DataContracts.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\Services\Services.DataContracts.Resources\Services.DataContracts.Resources.csproj">
-      <Project>{EEFCF6F4-8C28-4CAB-AFAC-68D458D52263}</Project>
-      <Name>Services.DataContracts.Resources</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\Services\Services.DataContracts\Services.DataContracts.V2.csproj">
-      <Project>{2ae4678d-8d61-44aa-9784-c9ef80576287}</Project>
-      <Name>Services.DataContracts.V2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\Services\Services\Services.csproj">
-      <Project>{1030e823-103d-468c-baca-dac7288de384}</Project>
-      <Name>Services</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Api.Collector\Api.Collector.csproj">
       <Project>{A9B7E4AA-C4F4-4507-ABE1-16F067FFEB02}</Project>
       <Name>Api.Collector</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Libraries\packages\Newtonsoft.Json.5.0.7\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework, Version=2.6.3.13283, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\Libraries\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
     </Reference>
-    <Reference Include="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

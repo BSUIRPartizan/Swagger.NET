@@ -54,7 +54,6 @@ namespace Api.Collector
             foreach (ApiBundle apiBundle in apiBundles)
             {
                 Type type = apiBundle.Type;
-                
 
                 if (filter.Contains(type.ToString()))
                 {
